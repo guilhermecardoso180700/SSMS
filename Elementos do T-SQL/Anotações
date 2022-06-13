@@ -1,0 +1,18 @@
+. Transact SQL, extensão do SQL, focada em manipulações de dados mais complexas, como por exemplo Variáveis, comandos de fluxo (While, IF), Loops, Stored Procedures, Funções
+
+1 - Declaração de variáveis
+    . Nome iniciado por @
+    . Atribuímos o valor através do comando SET, ou através do SELECT
+
+Exemplo: DECLARE @IDADE INT
+         SET @IDADE = 20 
+
+. Conseguimos exibir a varíavel através do comando PRINT:
+        PRINT @IDADE
+
+. Utilizar as variáveis nas nossas consultas:
+    DECLARE @CPF VARCHAR(12) = '1471156710'
+    SELECT NOME, * FROM [TABELA DE CLIENTES] WHERE CPF = @CPF
+
+. Atribuir valor para variáveis através de um SELECT:
+    SELECT @NOME2 = NOME, @DATA2 = [DATA DE NASCIMENTO], @IDADE2 = IDADE FROM [TABELA DE CLIENTES] WHERE CPF = @CPF
