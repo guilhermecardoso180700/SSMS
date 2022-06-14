@@ -1,0 +1,15 @@
+-- CREATE TABLE TABELA_TESTE (ID VARCHAR(10))
+-- DROP TABLE TABELA_TESTE
+
+-- Se a tabela a tabela existir, apagar a tabela, caso não exista, crie a tabela:
+IF OBJECT_ID ('TABELA_TESTE','U') IS NOT NULL 
+BEGIN 
+	DROP TABLE TABELA_TESTE
+END
+	CREATE TABLE TABELA_TESTE (ID VARCHAR(10))
+
+-- Se a tabela não existir, crie:
+IF OBJECT_ID ('TABELA_TESTE','U') IS NULL
+BEGIN 
+	CREATE TABLE TABELA_TESTE (ID VARCHAR(10))
+END
