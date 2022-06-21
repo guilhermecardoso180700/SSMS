@@ -1,0 +1,8 @@
+-- Declarando variáveis:
+DECLARE @DATANOTA DATE = '20170102'
+
+-- Contando quantas notas existem nessa data através do SELECT COUNT, e utilizando essa consulta dentro do IF
+IF (SELECT COUNT (*) FROM [NOTAS FISCAIS] WHERE DATA = @DATANOTA) > 70
+	PRINT 'MUITAS NOTAS'
+ELSE
+	PRINT 'POUCAS NOTAS'
