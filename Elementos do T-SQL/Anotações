@@ -28,5 +28,13 @@
         (SQL)
 
     . IF OBJECT_ID ('TABELA_TESTE','U') IS NOT NULL BEGIN = Se a tabela a tabela 'TABELA_TESTE' existir INICIE ...
-    
-4 - 
+
+4 -  Funções com datas:
+    . GETDATE()
+    . SELECT DATENAME(WEEKDAY, GETDATE())
+
+5 - WHILE (boolean)
+    BEGIN (SQL)
+        IF (SQL)
+            BREAK
+    END
