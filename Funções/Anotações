@@ -1,0 +1,5 @@
+1 - Funções
+    . Rotinas que efetuam um determinado processamento e retornam um valor:
+    . Utilizamos sempre BEGIN e END
+    . Sempre retornar valor através do RETURN
+    . Após a função declararmos as variáveis de entrada
