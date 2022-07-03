@@ -16,4 +16,12 @@ BEGIN
 CORPO DA PROCEDURE
 END
 
-2 - 
+2 - Utilizando Type:
+    . Criar o tipo de variável
+    . Declarar a variável de lista com o tipo criado anteriormente
+    . Realizar os inserts
+    . Realizar os Selects
+
+3 - Testando se a procedure existe:
+    IF OBJECT_ID ('RETORNA_VALORES', 'P') IS NOT NULL 
+        PRINT 'Procedure já existente'
