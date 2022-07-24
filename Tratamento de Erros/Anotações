@@ -1,0 +1,19 @@
+1 - introdução: 
+    . Podemos tratar erros utilizando as funções @@ERROR  e @@ROWCOUNT, ou com a funcionalidade TRY CATCH
+
+2 - @@ERROR e @@ROWCOUNT:
+
+    . @@ERROR: Inteiro que retorna a forma que o comando anterior terminou (0 --> Sem erros)  
+    . @@ROWCOUNT: Número de linhas com erro.
+     * atribuir o valor a uma variável, declará-la com OUTPUT
+     
+3 - TRY CATCH:
+
+Sintaxe padrão:
+    
+    TRY
+        <Comandos>
+    CATCH
+        <Comandos caso ocorra o erro>
+    END TRY
+
